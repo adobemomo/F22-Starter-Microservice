@@ -15,6 +15,7 @@ class ColumbiaStudentResource:
         pw = os.environ.get("DBPW")
         h = os.environ.get("DBHOST")
 
+        print('****', usr, pw, h, '*****')
         conn = pymysql.connect(
             user=usr,
             password=pw,
